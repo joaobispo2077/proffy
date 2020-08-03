@@ -24,15 +24,15 @@ function Landing() {
             className="hero-image"/>
 
             <div className="buttons-container">
-                <a href="" className="study">
+                <a  className="study">
                     <img src={studyIcon} alt="Estudar"/>Estudar
                 </a>
 
-                <a href="" className="give-classes">
+                <a  className="give-classes">
                     <img src={giveClassesIcon} alt="Dar aulas"/>Dar aulas
                 </a>
             </div>
-            
+
             <span className="total-connections">
                 Total de 200 conexões já realizadas <img src={purpleHeartIcon} alt="Coração roxo"/>
             </span>
