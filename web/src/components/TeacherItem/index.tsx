@@ -6,9 +6,9 @@ const TeacherItem = () => {
     return (  
         <article className="teacher-item">
         <header>
-            <img src="https://avatars0.githubusercontent.com/u/61950209?s=460&u=ecd3bb6e8f0be5a1754dfa36f2a27cdef340ca0d&v=4" alt="Viviane Queiroz"/>
+            <img src="https://i.pinimg.com/564x/d8/4c/4a/d84c4a6f6388070de27f55d155c629a6.jpg" alt="Viviane Queiroz"/>
             <div>
-                <strong>Viviane de Santana Queiroz</strong>
+                <strong>Viviane</strong>
                 <span>Biologia</span>
             </div>
         </header>
