@@ -40,6 +40,8 @@ function TeacherForm() {
                             { value: 'Espanhol', label: 'Espanhol'},
                             { value: 'Geografia do Brasil', label: 'Geografia do Brasil'},
                             { value: 'História do Brasil', label: 'História do Brasil'},
+                            { value: 'Artes', label: 'Artes'},
+                            { value: 'Educação Física', label: 'Educação Física'},
                         ]}
                     />
                     <Input name="cost" label="Custo da sua hora por aula"/>
