@@ -24,10 +24,21 @@ async index(request: Request, response: Response) {
         })
     }   
 
-    const timeInMinutes = convertHourToMinutes(filters.time as string);
+    const timeInMinutes = convertHourToMinutes(time);
 
     const classes = await db('classes')
-        .where('classes.subject', "=", subject);
+        .whereExists(function(){
+            this.select('class_schedule.*')
+                .from('class_schedule')
+                .whereRaw('`class_schedule`.`class_id` = `classes`.`id`')
+                .whereRaw('`class_schedule`.`week_day` = ??', [Number(week_day)])
+        })
+        .where('classes.subject', "=", subject)
+        .join('users', 'classes.user_id', '=', 'users.id')
+        .select(['classes.*', 'users.*']);
+
+
+
     return response.json(classes);
     
 }
