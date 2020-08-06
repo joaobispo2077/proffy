@@ -18,10 +18,15 @@ function TeacherForm() {
     ]);
     
     function addNewScheduleItem(){
-        setscheduleItems([
-            ...scheduleItems,
-            { week_day: 0, from: '', to: '' }
-        ]);
+        if (scheduleItems.length < 7){
+            setscheduleItems([
+                ...scheduleItems,
+                { week_day: 0, from: '', to: '' }
+            ]);
+
+        } else {
+         return null
+        }       
     
     }
     return (
