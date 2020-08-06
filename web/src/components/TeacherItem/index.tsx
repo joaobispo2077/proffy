@@ -20,7 +20,7 @@ const TeacherItem = () => {
         </p>
         <footer>
             <p>
-                Preço/hora da aula
+                Investimento/hora da aula
                 <strong>R$ 100,00</strong>
             </p>
             <button type="button">
