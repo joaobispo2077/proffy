@@ -12,6 +12,12 @@ interface SelectProps extends SelectHTMLAttributes<HTMLSelectElement>{
     }>;
 }
 const Select: React.FC<SelectProps> = ({name, label, options, ...rest}) => {
+    // const keySelect = Math.round(Math.random() * 1000);
+    // const keyOptionSelect = Math.round(Math.random() * 1000);
+    // console.log(keySelect);
+    // console.log(keyOptionSelect);
+    
+    
     return(
         <div className="select-block">
             <label htmlFor={name}>{label}</label>
