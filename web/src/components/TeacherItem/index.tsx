@@ -2,26 +2,33 @@ import React from 'react';
 import whatsappIcon from '../../assets/images/icons/whatsapp.svg'
 import './styles.css';
 
-const TeacherItem = () => {
+export interface Teacher {    
+        id: number;
+        avatar: string;
+        name: string;  
+        bio: string;
+        subject: string;
+        cost: number;
+        whatsapp: string;   
+}
+export interface TeacherItemProps {
+    teacher: Teacher;
+}
+const TeacherItem: React.FC<TeacherItemProps> = ({teacher}) => {
     return (  
         <article className="teacher-item">
         <header>
-            <img src="https://i.pinimg.com/564x/d8/4c/4a/d84c4a6f6388070de27f55d155c629a6.jpg" alt="Viviane Queiroz"/>
+            <img src={teacher.avatar} alt="Viviane Queiroz"/>
             <div>
-                <strong>Viviane</strong>
-                <span>Biologia</span>
+                <strong>{teacher.name}</strong>
+                <span>{teacher.subject}</span>
             </div>
         </header>
-        <p>
-        Aficionada e inspirada pela junção "mágica" de tecnologia com o estudo da vida.
-        <br/>
-        <br/>
-        Inpulsionada a disseminar à tão moderna biotecnologia, busca aprimora-lá com programação para causar impacto positivo na vida das pessoas por meio dessa área recente.
-        </p>
+        <p>{teacher.bio}</p>
         <footer>
             <p>
-                Investimento/hora da aula
-                <strong>R$ 100,00</strong>
+                Custo/hora da aula
+                <strong>R$ {teacher.cost}</strong>
             </p>
             <button type="button">
                 <img src={whatsappIcon} alt="whatsapp"/>
