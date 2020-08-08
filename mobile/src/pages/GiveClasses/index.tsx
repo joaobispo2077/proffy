@@ -21,9 +21,6 @@ function GiveClasses() {
             source={giveClassesBgIImage} 
             style={styles.content}
         >
-            <Text style={styles.description}>
-                joao está com saudade do amorzinho dele, a viviane 😭😭😭😭😭😭😭😭
-            </Text>
             <Text style={styles.title}>Quer ser um Proffy?</Text>
             <Text style={styles.description}>
                 Para começar você precisa se cadastrar como professor na plataforma web.            
