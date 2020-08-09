@@ -8,29 +8,42 @@ import whatsappIcon from '../../assets/images/icons/whatsapp.png';
 
 import styles from './styles';
 
-const TeacherItem = () => {
+
+export interface Teacher {    
+    id: number;
+    avatar: string;
+    name: string;  
+    bio: string;
+    subject: string;
+    cost: number;
+    whatsapp: string;   
+}
+
+interface TeacherItemProps {
+    teacher: Teacher;
+}
+
+const TeacherItem: React.FC<TeacherItemProps> = ({teacher}) => {
     return(
         <View style={styles.container}>
             <View style={styles.profile}>
                 <Image 
                     style={styles.avatar}
-                    source={{uri: 'http://github.com/joaobispo2077.png'}}
+                    source={{uri: teacher.avatar}}
                 />
 
                 <View style={styles.profileInfo}>
-                    <Text style={styles.name}>João Bispo</Text>
-                    <Text style={styles.subject}>Matemática</Text>
+                    <Text style={styles.name}>{teacher.name}</Text>
+                    <Text style={styles.subject}>{teacher.subject}</Text>
                 </View>
             </View>
 
-            <Text style={styles.bio}> 2 + 2 = 4. {'\n'} {'\n'}
-                Inspirado pelos números visa mostrar que a matemática é muito mais que símbolos complexos, busca conectar a sua mente com inúmeras situações em que os números e calcúlos se apresentam em seu cotidiano e que além de estarem lá, nem são tão complexos assim.
-            </Text>
+            <Text style={styles.bio}>{teacher.bio}</Text>
 
             <View style={styles.footer}>
                 <Text style={styles.price}>
                     Custo/hora da aula {'   '}
-                    <Text style={styles.priceValue}>R$ 100,00</Text>
+                    <Text style={styles.priceValue}>R$ {teacher.cost}</Text>
                 </Text>
 
                 <View style={styles.buttonsContainer}>
