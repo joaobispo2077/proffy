@@ -24,7 +24,7 @@ function Landing(){
            const {total} = response.data;
            setTotalConnecions(total);            
         })
-    }, [])
+    }, [totalConnections])
 
 
     function handleNavigateToGiveClassesPage() {
