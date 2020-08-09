@@ -31,7 +31,9 @@ const TeacherItem: React.FC<TeacherItemProps> = ({teacher, favorited}) => {
     const [isFavorited, setIsFavorited] = useState(favorited);
     
     function handleLinkToWhatsapp() {
-
+        api.post('connections', {
+            user_id: teacher.id,
+        });
         Linking.openURL(`whatsapp://send?text=${`Olá ${teacher.name}, eu gostaria de ajuda com a matéria de ${teacher.subject}! [texto-sugerido]`}&phone=+${teacher.whatsapp}`);
 
     }
