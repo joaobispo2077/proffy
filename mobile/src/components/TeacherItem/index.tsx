@@ -29,13 +29,14 @@ const TeacherItem = () => {
 
             <View style={styles.footer}>
                 <Text style={styles.price}>
-                    Custo/hora {'   '}
+                    Custo/hora da aula {'   '}
                     <Text style={styles.priceValue}>R$ 100,00</Text>
                 </Text>
 
                 <View style={styles.buttonsContainer}>
-                    <RectButton style={styles.favoriteButton}>
-                        <Image source={heartOutlineIcon} />
+                    <RectButton style={[styles.favoriteButton, styles.favorited]}>
+                        {/* <Image source={heartOutlineIcon} /> */}
+                        <Image source={unFavoriteIcon} />
                     </RectButton>
 
                     <RectButton style={styles.contactButton}>

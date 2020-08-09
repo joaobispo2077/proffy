@@ -52,6 +52,7 @@ const styles = StyleSheet.create({
         backgroundColor: '#fafafc',
         padding: 24,
         alignItems: 'center',
+        marginTop: 24
     },
 
     price: {
@@ -79,6 +80,10 @@ const styles = StyleSheet.create({
         justifyContent: "center",
         alignItems: "center",
         marginRight: 8,
+    },
+
+    favorited: {
+        backgroundColor: '#e33d3d',
     },
 
     contactButton: {
