@@ -56,8 +56,12 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 O Proffy é uma plataforma de estudos que ajuda alunos a encontrarem professores que reforçam seus estudos de forma eficiente.
 
 ## 🔖 Layout
+Clique nos links para acessar os projetos Web e Mobile.
 
-Você pode visualizar o layout do projeto web por meio [desse link](https://www.figma.com/file/js7pVWjFwfMgICztEsbXIz/Proffy--Web) e o layout do projeto mobile por meio desse [outro link](https://www.figma.com/file/X6QcE1WnqOCkwe91HKcGAs/Proffy--Mobile). Lembrando que você irá precisar ter uma conta no [Figma](http://figma.com/).
+-  💻: [Web](https://www.figma.com/file/js7pVWjFwfMgICztEsbXIz/Proffy--Web)
+- 📱: [Mobile](https://www.figma.com/file/X6QcE1WnqOCkwe91HKcGAs/Proffy--Mobile)
+
+Lembrando que você irá precisar ter uma conta no [Figma](http://figma.com/).
 
  <!-- <h3 style="display: inline"> Preview  </h3>  <strong> - Percurso da aplicação na Web e no Mobile: <strong>
 <p align="center" style="display: flex; align-items: flex-start; justify-content: center;">

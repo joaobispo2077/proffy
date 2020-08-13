@@ -26,7 +26,7 @@ function Favorites() {
 
         return (
                 <View style={styles.container}>
-                        <PageHeader title="Proffys favoritos" />
+                        <PageHeader title="Meus Proffys favoritos" />
 
                         <ScrollView
                         style={styles.teacherList}
