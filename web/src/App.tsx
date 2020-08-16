@@ -1,11 +1,19 @@
-import React from 'react';
-import './assets/styles/global.css';
+import React, { useState } from 'react';
 import Routes from './routes';
+
+import GlobalStyles from './assets/styles/GlobalStyles';
+import { ThemeProvider } from 'styled-components';
+import { ThemeName, themes } from './assets/styles/themes';
 
 
 function App() {
+  const [themeName, setThemeName] = useState<ThemeName>('light');
+  const currentTheme = themes[themeName]
   return (
-    <Routes />
+    <ThemeProvider theme={currentTheme}>      
+      <GlobalStyles />
+      <Routes />
+    </ThemeProvider>
   );
 }
 
