@@ -4,6 +4,7 @@
     border-radius: 0.8rem;
     margin-top: 2.4rem;
     overflow: hidden;
+    transition: background 1.25s linear;
 }
 
 .teacher-item header {

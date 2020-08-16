@@ -13,7 +13,7 @@ function App() {
   return (
     <ThemeProvider theme={currentTheme}>      
       <GlobalStyles />
-      <Switcher theme={themeName} setThemeName={setThemeName} />
+      <Switcher themeName={themeName} setThemeName={setThemeName} />
       <Routes />
     </ThemeProvider>
   );

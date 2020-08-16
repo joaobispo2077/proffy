@@ -34,7 +34,7 @@ export const themes = {
     '--color-text-complement': '#9C98A6',
     '--color-text-base': '#6A6180',
     '--color-line-in-white': '#E6E6F0',
-    '--color-input-background': '#F8F8FC',
+    '--color-input-background': '#414141',
     '--color-button-text': '#FFFFFF',
     '--color-box-base': '#121212',
     '--color-box-footer': '#313131',

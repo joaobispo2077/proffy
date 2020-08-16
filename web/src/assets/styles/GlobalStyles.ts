@@ -25,6 +25,7 @@ html, body, #root {
 
 body {
     background-color: var(--color-background);
+    transition: background 1.25s linear;
 }
 
 #root{

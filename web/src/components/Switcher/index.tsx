@@ -8,9 +8,13 @@ interface Props{
     setThemeName: (newName: ThemeName) => void;
 }
 
-function Switcher<Props>({ themeName, setThemeName}){
+const Switcher: React.FC<Props> = ({ themeName, setThemeName}) => {
+
+    function toggleTheme(){
+        setThemeName(themeName === 'light' ? 'dark' : 'light');
+    }
     return (
-        <div className={`switcher ${themeName === 'light' ? 'dark' : 'light'}`} onClick={() => {alert('oi')}}></div>
+        <div className={`switcher ${themeName === 'light' ? 'dark' : 'light'}`} onClick={toggleTheme}></div>
     )
 }
 
