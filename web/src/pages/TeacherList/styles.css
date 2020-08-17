@@ -35,6 +35,7 @@
 #page-teacher-list main {
     margin: 3.2rem auto;
     width: 90%;
+    transition: background-color 1.25s linear;
 }
 
 @media(min-width: 700px){

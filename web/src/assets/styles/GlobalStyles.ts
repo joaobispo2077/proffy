@@ -17,6 +17,8 @@ export default createGlobalStyle`
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    transition: background 1.25s linear;
+    transition: color 1.25s linear;
 }
 
 html, body, #root {
@@ -25,7 +27,7 @@ html, body, #root {
 
 body {
     background-color: var(--color-background);
-    transition: background 1.25s linear;
+    transition: background-color 1.25s linear;
 }
 
 #root{
