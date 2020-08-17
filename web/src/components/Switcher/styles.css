@@ -1,5 +1,5 @@
 .dark {
-    transform: scale(1);
+    transform: scale(.75);
     cursor: pointer;
     height: 25px;
     width: 25px;
@@ -25,11 +25,22 @@
                 -18.5px 18.5px 0 -8px #fff, 
                 18.5px 18.5px 0 -8px #fff;
     ;
-    transform: scale(1);
+    transform: scale(.75);
     transition: all 1.25s;
 }
 
 .switcher{
     position: absolute;
-    top: 40px;
+    top: 60px;
+    right: 30px;
 }
+
+@media (min-width: 700px) {
+    .switcher{
+        position: absolute;
+        top: 45px;
+        right: 30px;
+    }
+
+}
+

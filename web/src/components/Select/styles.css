@@ -22,6 +22,7 @@
     padding: 0 1.6rem;
     font: 1.6rem Archivo;
     color: var(--color-select-text);
+    transition: background-color 1.25s linear;
 }
 
  .select-block:focus-within::after {
