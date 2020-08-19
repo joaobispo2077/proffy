@@ -23,30 +23,44 @@ function Landing() {
     }, [totalConnections])
     return (
     <div id="page-landing">
+
         <div id="page-landing-content" className="container">
-            <div className="logo-container">
-                <img src={logoImg} alt="Proffy"/>
-                <h2>Sua plataforma de estudos online.</h2>
-            </div>
+                <div className="logo-container">
+                    <img src={logoImg} alt="Proffy"/>
+                    <h2>Sua plataforma de estudos online.</h2>
+                </div>
 
-            <img 
-            src={landingImg} 
-            alt="Plataforma de estudos" 
-            className="hero-image"/>
+                <img 
+                src={landingImg} 
+                alt="Plataforma de estudos" 
+                className="hero-image"/>
 
-            <div className="buttons-container">
-                <Link to="/study" className="study">
-                    <img src={studyIcon} alt="Estudar"/>Estudar
-                </Link>
 
-                <Link to="/give-classes" className="give-classes">
-                    <img src={giveClassesIcon} alt="Dar aulas"/>Dar aulas
-                </Link>
-            </div>
+
+                <div className="buttons-container">
+                    <Link to="/study" className="study">
+                        <img src={studyIcon} alt="Estudar"/>Estudar
+                    </Link>
+
+                    <Link to="/give-classes" className="give-classes">
+                        <img src={giveClassesIcon} alt="Dar aulas"/>Dar aulas
+                    </Link>
+                </div>
+
+                <div className="container-text">
+                    <div className="welcome">
+                        <span>Seja bem-vindo.</span>
+                        <p>O que deseja fazer?</p>
+                    </div>
+                    <span className="total-connections">
+                        Total de {totalConnections} conexões
+                    <span >
+                        já realizadas 
+                        <img src={purpleHeartIcon} alt="Coração roxo"/>
+                    </span>
+                    </span>                    
+                </div>
             
-            <span className="total-connections">
-                Total de {totalConnections} conexões já realizadas <img src={purpleHeartIcon} alt="Coração roxo"/>
-            </span>
 
         </div>
     </div>
