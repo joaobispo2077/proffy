@@ -75,8 +75,19 @@ async index(request: Request, response: Response) {
             });
     
         const class_id = insertedClassesIds[0];
-    
-        const classSchedule = schedule.map((scheduleItem: ScheduleItem) => {
+
+        console.log(`cru: ${schedule} ${typeof(schedule)}`);
+        
+        /*Expresssão Regular*/
+        const exp = /{"week_day":\s[0-6],\s"from":\s"[0-9]{1,2}:[0-9]{1,2}",\s"to":\s"[0-9]{1,2}:[0-9]{1,2}"}/gim;
+
+        const scheduleRegex = schedule.match(exp);
+        
+        console.log(`regex: ${scheduleRegex}${typeof(scheduleRegex)}`);
+
+        const classSchedule = scheduleRegex
+        .map((scheduleItemConvert: Array) => JSON.parse(scheduleItemConvert))
+        .map((scheduleItem: ScheduleItem) => {
         return{
             class_id,
             week_day: scheduleItem.week_day,
@@ -84,6 +95,7 @@ async index(request: Request, response: Response) {
             to: convertHourToMinutes(scheduleItem.to)
         };    
         });
+        
     
         await trx('class_schedule').insert(classSchedule);
     
