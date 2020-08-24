@@ -61,7 +61,7 @@ async index(request: Request, response: Response) {
         try {
             const insertedUsersId = await trx('users').insert({
                 name,
-                avatar,
+                avatar: request.file.filename,
                 whatsapp,
                 bio
             });
