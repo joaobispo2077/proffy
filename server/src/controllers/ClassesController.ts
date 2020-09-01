@@ -24,6 +24,7 @@ async index(request: Request, response: Response) {
         })
     }   
 
+
     const timeInMinutes = convertHourToMinutes(time);
 
     const classes = await db('classes')
@@ -39,6 +40,12 @@ async index(request: Request, response: Response) {
         .join('users', 'classes.user_id', '=', 'users.id')
         .select(['classes.*', 'users.*']);
 
+        // const serializedClasses = classes.map((class) => {
+        //     return {
+        //         ...class,
+        //         avatar: `http://192.168.0.107:3333/uploads/${class.avatar}`, 
+        //     };
+        // });
 
 
     return response.json(classes);
