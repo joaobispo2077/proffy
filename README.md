@@ -71,11 +71,11 @@ Lembrando que você irá precisar ter uma conta no [Figma](http://figma.com/).
   <img alt="" title="" src="" width="400px">
 </p> -->
 ## 🎯 Desafios
+  - [x] [Página 404](https://github.com/joaobispo2077/proffy/blob/master/.github/page404.md)
+  - [x] [Darkmode](https://github.com/joaobispo2077/proffy/blob/master/.github/darkmode.md)
+  - [ ] Upload de imagens
 
-    - [x] [Página 404](https://github.com/joaobispo2077/proffy/blob/master/.github/page404.md)
-    - [x] [Darkmode](https://github.com/joaobispo2077/proffy/blob/master/.github/darkmode.md)
-    - [ ] Upload de imagens
-    
+
 ## ♻️ Como contribuir
 
 - Faça um fork desse repositório;
